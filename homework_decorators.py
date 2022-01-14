@@ -46,21 +46,21 @@
 # 2. Write a decorator that will show the hour, minute and second before calling the code of the decorated
 # function and after calling the code of the decorated function.
 
-# from _datetime import datetime as d
-# import time as t
-#
-# def decorate_my_function(func):
-#     def print_time():
-#         print(f'Time before {func.__name__} {d.now().strftime("%H:%M:%S")}')
-#         func()
-#         print(f'Time after {func.__name__} {d.now().strftime("%H:%M:%S")}')
-#     return print_time
-#
-# # @ leidzia nerasyti my_function = decorate_my_function(my_function)()
-# @decorate_my_function
-# def my_function():
-#     print(f'My function was executed')
-#     t.sleep(2)
-#
-# # my_function = decorate_my_function(my_function)()
-# my_function()
+from _datetime import datetime as d
+import time as t
+
+def decorate_my_function(func):
+    def print_time():
+        print(f'Time before {func.__name__} {d.now().strftime("%H:%M:%S")}')
+        func()
+        print(f'Time after {func.__name__} {d.now().strftime("%H:%M:%S")}')
+    return print_time
+
+# @ leidzia nerasyti my_function = decorate_my_function(my_function)()
+@decorate_my_function
+def my_function():
+    print(f'My function was executed')
+    t.sleep(2)
+
+# my_function = decorate_my_function(my_function)()
+my_function()
