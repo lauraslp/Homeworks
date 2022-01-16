@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Ona",
+    "salary": 550,
+    "no_children": 2,
+    "children_names": ["Agne", "Ignas"]
+  },{
+    "name": "Greta",
+    "salary": 700,
+    "no_children": 0,
+    "children_names": []
+  }
+]
