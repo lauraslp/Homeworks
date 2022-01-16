@@ -21,7 +21,7 @@ def add_person(name, list_of_dictionaries):
         print(f'Error during adding person: there is no such person {name} in a list.')
     return
 
-# Function to remove a person by name. Append list of dictionaries
+# Function to remove a person by name. 
 def remove_person(name, list_of_dictionaries):
     person = find_person('name', name, list_of_dictionaries)
     try:
