@@ -1,0 +1,13 @@
+[
+  {
+   "name": "Jonas",
+   "salary": 500,
+   "no_children": 3,
+   "children_names": ["Arminas", "Kainas", "Abelis"]
+  },{
+   "name": "Petras",
+   "salary": 900,
+   "no_children": 2,
+   "children_names": ["Jonukas", "Grytute"]
+  }
+]
